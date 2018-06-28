@@ -1,10 +1,10 @@
-"""This is the main file which coordinates the zombie adventure
+"""This is the main script which coordinates the zombie adventure
 application.
 @author: Kevin Hoopes
 @version: 6/27/2018"""
 
-from pprint import pprint
-from json_pipe import WEAPON_DATA, ENCOUNTER_DATA
+from encounter_generator import EncounterGenerator
+from weapon_generator import WeaponGenerator
 
 #############
 # FUNCTIONS #
@@ -14,10 +14,10 @@ def main():
     Main function
     No params, no return
     """
-    for weapon in WEAPON_DATA:
-        pprint(weapon)
+    weapon_gen = WeaponGenerator()
+    encounter_gen = EncounterGenerator()
 
-    for encounter in ENCOUNTER_DATA:
-        pprint(encounter)
+    weapon_gen.print_weapons()
+    encounter_gen.print_encounters()
 
 main()

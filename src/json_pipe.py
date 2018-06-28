@@ -1,4 +1,4 @@
-"""This file pulls weapon and encounter data from JSON
+"""This script pulls weapon and encounter data from JSON
 resources so that they may be easily imported by other
 scripts.
 @author: Kevin Hoopes

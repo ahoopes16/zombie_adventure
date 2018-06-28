@@ -1,0 +1,14 @@
+[
+	{
+		"name" : "Baseball Bat",
+		"damage" : "1d8",
+		"rarity" : "Uncommon",
+		"ammo" : "None"
+	},
+	{
+		"name" : "Revolver",
+		"damage" : "3d10",
+		"ammo" : ".38",
+		"rarity" : "Rare"
+	}
+]

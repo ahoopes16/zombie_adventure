@@ -15,9 +15,9 @@ def main():
     No params, no return
     """
     for weapon in WEAPON_DATA:
-        pprint(weapon['name'])
+        pprint(weapon)
 
     for encounter in ENCOUNTER_DATA:
-        pprint(encounter['name'])
+        pprint(encounter)
 
 main()

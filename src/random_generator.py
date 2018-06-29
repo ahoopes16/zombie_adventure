@@ -35,7 +35,7 @@ class RandomGenerator:
                                          self._member_file))
             self._members = json.load(mem_file)
             mem_file.close()
-        
+
         except IOError as err:
             print("Couldn't read file {}.\nReceived error: {}.\n\
             	  ".format(self._member_file, err.strerror))

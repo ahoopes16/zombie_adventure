@@ -33,8 +33,6 @@ class RandomGenerator:
     def _load_member_data(self):
         """Load the members to be randomly generated from
         the provided JSON file.
-
-        @return: the members found inside the JSON file
         """
 
         try:
@@ -42,12 +40,9 @@ class RandomGenerator:
                                          self._member_file))
             self._members = json.load(mem_file)
             mem_file.close()
-        except IOError as e:
-            print("Couldn't read file {}".format(self._member_file))
-
-        # with open(os.path.join(self._curr_dir,
-        # 	                   self._member_file)) as mem_file:
-        #     member_data = json.load(mem_file)
+        except IOError as err:
+            print("Couldn't read file {}.\nReceived error: {}.\n\
+            	  ".format(self._member_file, err.strerror))
 
     def set_member_file(self, filename):
         """Set the generator's member file and reload

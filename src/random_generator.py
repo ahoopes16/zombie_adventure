@@ -11,7 +11,8 @@ from pprint import pprint
 class RandomGenerator:
 
     """Randomly generate members from a given file 
-    when prompted."""
+    when prompted.
+    """
 
     def __init__(self):
         """Construct a default generator."""
@@ -42,6 +43,3 @@ class RandomGenerator:
         """Print the member data for sanity."""
         for member in self._members:
             pprint(member)
-
-generator = RandomGenerator("../resources/example_weapons.json")
-generator.print_members()

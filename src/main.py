@@ -3,21 +3,28 @@ application.
 @author: Kevin Hoopes
 @version: 6/27/2018"""
 
-from encounter_generator import EncounterGenerator
-from weapon_generator import WeaponGenerator
+from random_generator import RandomGenerator
+
+#############
+# CONSTANTS #
+#############
+
+WEAPONS_PATH = "../resources/example_weapons.json"
+ENCOUNTERS_PATH = "../resources/example_encounters.json"
 
 #############
 # FUNCTIONS #
 #############
+
 def main():
     """
     Main function
     No params, no return
     """
-    weapon_gen = WeaponGenerator()
-    encounter_gen = EncounterGenerator()
+    weapon_gen = RandomGenerator(WEAPONS_PATH)
+    encounter_gen = RandomGenerator(ENCOUNTERS_PATH)
 
-    weapon_gen.print_weapons()
-    encounter_gen.print_encounters()
+    weapon_gen.print_members()
+    encounter_gen.print_members()
 
 main()

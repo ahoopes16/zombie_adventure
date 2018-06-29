@@ -26,7 +26,9 @@ class RandomGenerator:
         """
         self._curr_dir = os.path.dirname(__file__)
         self._member_file = filename
-        self._members = self._load_member_data()
+        self._members = []
+
+        self._load_member_data()
 
     def _load_member_data(self):
         """Load the members to be randomly generated from
@@ -34,11 +36,18 @@ class RandomGenerator:
 
         @return: the members found inside the JSON file
         """
-        with open(os.path.join(self._curr_dir,
-        	                   self._member_file)) as mem_file:
-            member_data = json.load(mem_file)
 
-        return member_data
+        try:
+            mem_file = open(os.path.join(self._curr_dir,
+                                         self._member_file))
+            self._members = json.load(mem_file)
+            mem_file.close()
+        except IOError as e:
+            print("Couldn't read file {}".format(self._member_file))
+
+        # with open(os.path.join(self._curr_dir,
+        # 	                   self._member_file)) as mem_file:
+        #     member_data = json.load(mem_file)
 
     def set_member_file(self, filename):
         """Set the generator's member file and reload
@@ -48,7 +57,7 @@ class RandomGenerator:
         """
         if self._member_file != filename:
             self._member_file = filename
-            self._members = self._load_member_data()
+            self._load_member_data()
 
     def get_member_file(self):
         """Return the generator's member file."""

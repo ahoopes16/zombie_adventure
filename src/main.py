@@ -3,6 +3,7 @@ application.
 @author: Kevin Hoopes
 @version: 6/27/2018"""
 
+from pprint import pprint
 from random_generator import RandomGenerator
 
 #############
@@ -18,13 +19,12 @@ ENCOUNTERS_PATH = "../resources/example_encounters.json"
 
 def main():
     """
-    Main function
-    No params, no return
+    Host the game.
     """
     weapon_gen = RandomGenerator(WEAPONS_PATH)
     encounter_gen = RandomGenerator(ENCOUNTERS_PATH)
 
-    weapon_gen.print_members()
-    encounter_gen.print_members()
+    pprint(weapon_gen.get_members())
+    pprint(encounter_gen.get_members())
 
 main()

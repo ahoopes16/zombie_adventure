@@ -13,13 +13,7 @@ class RandomGenerator:
     when prompted.
     """
 
-    def __init__(self):
-        """Construct a default generator."""
-        self._curr_dir = os.path.dirname(__file__)
-        self._member_file = ""
-        self._members = []
-
-    def __init__(self, filename):
+    def __init__(self, filename=""):
         """Construct a generator with a filename.
 
         @param filename: the filename holding the members
@@ -28,7 +22,8 @@ class RandomGenerator:
         self._member_file = filename
         self._members = []
 
-        self._load_member_data()
+        if self._member_file != "":
+            self._load_member_data()
 
     def _load_member_data(self):
         """Load the members to be randomly generated from

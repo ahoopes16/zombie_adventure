@@ -27,5 +27,10 @@ class GeneratorTests(unittest.TestCase):
         assert self.generator.get_member_file() == self.encounter_path
         assert self.generator.get_members()[0]['title'] == "Puppy!"
 
+    def test_determine_rarity(self):
+        """Test determine rarity method."""
+        rarity = self.generator._determine_rarity()
+        assert rarity in ["rare", "uncommon", "common"]
+
 if __name__ == '__main__':
     unittest.main()

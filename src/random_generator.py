@@ -6,6 +6,7 @@ field inside the members of the JSON file.
 
 import json
 import os
+from numpy.random import choice
 
 class RandomGenerator:
 
@@ -38,6 +39,18 @@ class RandomGenerator:
         except IOError as err:
             print("Couldn't read file {}.\nReceived error: {}.\n\
             	  ".format(self._member_file, err.strerror))
+
+    def _determine_rarity(self):
+        """Determine the rarity of the member to be
+        returned.
+        """
+        rare = 0.1
+        uncommon = 0.2
+        common = 0.7
+        rarities = ["rare", "uncommon", "common"]
+        weights = [rare, uncommon, common]
+
+        return choice(rarities, p=weights)
 
     def set_member_file(self, filename):
         """Set the generator's member file and reload

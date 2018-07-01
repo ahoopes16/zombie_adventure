@@ -1,14 +1,23 @@
-[
-	{
-		"name" : "Baseball Bat",
-		"damage" : "1d8",
-		"rarity" : "Uncommon",
-		"ammo" : "None"
-	},
-	{
-		"name" : "Revolver",
-		"damage" : "3d10",
-		"ammo" : ".38",
-		"rarity" : "Rare"
-	}
-]
+{
+	"rare" : [
+		{
+			"name" : "Revolver",
+			"damage" : "3d10",
+			"ammo" : ".38"
+		}
+	],
+	"uncommon" : [
+		{
+			"name" : "Baseball Bat",
+			"damage" : "1d8",
+			"ammo" : "None"
+		}
+	],
+	"common" : [
+		{
+			"name" : "Hammer",
+			"damage" : "1d6",
+			"ammo" : "None"
+		}
+	]
+}

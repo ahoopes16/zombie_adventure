@@ -20,17 +20,21 @@ class GeneratorTests(unittest.TestCase):
         """Set up variables to run tests against."""
         self.generator = RandomGenerator()
         self.encounter_path = "../resources/example_encounters.json"
+        self.weapon_path = "../resources/example_weapons.json"
         self.generator.set_member_file(self.encounter_path)
 
     def test_set_filename(self):
         """Test set filename method."""
         assert self.generator.get_member_file() == self.encounter_path
-        assert self.generator.get_members()[0]['title'] == "Puppy!"
+        assert self.generator.get_members()['rare'][0]['title'] == "Puppy!"
 
-    def test_determine_rarity(self):
+    def test_generate(self):
         """Test determine rarity method."""
-        rarity = self.generator._determine_rarity()
-        assert rarity in ["rare", "uncommon", "common"]
+
+        self.generator.set_member_file(self.weapon_path)
+        generated = self.generator.generate()
+        example_weapons = ["Revolver", "Baseball Bat", "Hammer"]
+        assert generated['name'] in example_weapons
 
 if __name__ == '__main__':
     unittest.main()

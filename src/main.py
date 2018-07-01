@@ -26,5 +26,6 @@ def main():
 
     pprint(weapon_gen.get_members())
     pprint(encounter_gen.get_members())
+    pprint(weapon_gen.generate())
 
 main()

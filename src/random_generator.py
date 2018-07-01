@@ -7,6 +7,7 @@ field inside the members of the JSON file.
 import json
 import os
 from numpy.random import choice
+import random
 
 class RandomGenerator:
 
@@ -69,3 +70,8 @@ class RandomGenerator:
     def get_members(self):
         """Return the generator's member data."""
         return self._members
+
+    def generate(self):
+        """Return a random member for use."""
+        chosen_rarity = self._determine_rarity()
+        return choice(self._members[chosen_rarity])

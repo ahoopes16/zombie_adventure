@@ -7,7 +7,6 @@ field inside the members of the JSON file.
 import json
 import os
 from numpy.random import choice
-import random
 
 class RandomGenerator:
 

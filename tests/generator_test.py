@@ -1,10 +1,31 @@
-import sys, os, pytest
+"""This module contains a testing suite for the Random
+Generator class.
+@author: Kevin Hoopes
+@version: 7/1/2018
+"""
+
+import sys
+import os
+import unittest
+
 sys.path.insert(0, os.path.abspath('..'))
 from src.random_generator import RandomGenerator
 
-def test_set_filename():
-    generator = RandomGenerator()
-    ENCOUNTER_PATH = "../resources/example_encounters.json"
-    generator.set_member_file(ENCOUNTER_PATH)
-    assert generator.get_member_file() == ENCOUNTER_PATH
-    assert generator.get_members()[0]['title'] == "Puppy!"
+class GeneratorTests(unittest.TestCase):
+
+    """Hold the test cases for the Random Generator
+    class."""
+
+    def setUp(self):
+        """Set up variables to run tests against."""
+        self.generator = RandomGenerator()
+        self.encounter_path = "../resources/example_encounters.json"
+        self.generator.set_member_file(self.encounter_path)
+
+    def test_set_filename(self):
+        """Test set filename method."""
+        assert self.generator.get_member_file() == self.encounter_path
+        assert self.generator.get_members()[0]['title'] == "Puppy!"
+
+if __name__ == '__main__':
+    unittest.main()

@@ -29,7 +29,6 @@ class RandomGenerator:
         """Load the members to be randomly generated from
         the provided JSON file.
         """
-
         try:
             mem_file = open(os.path.join(self._curr_dir,
                                          self._member_file))

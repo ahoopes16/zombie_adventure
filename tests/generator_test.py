@@ -30,10 +30,10 @@ class GeneratorTests(unittest.TestCase):
 
     def test_generate(self):
         """Test determine rarity method."""
-
         self.generator.set_member_file(self.weapon_path)
-        generated = self.generator.generate()
         example_weapons = ["Revolver", "Baseball Bat", "Hammer"]
+        
+        generated = self.generator.generate()
         assert generated['name'] in example_weapons
 
 if __name__ == '__main__':

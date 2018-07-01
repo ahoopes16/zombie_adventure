@@ -1,6 +1,8 @@
 """This class will load a JSON file and randomly generate
 a member of that file when prompted based on a 'rarity'
-field inside the members of the JSON file.
+field inside the members of the JSON file. This module
+assumes the JSON is split into arrays of objects. The arrays
+should be split by rarity level.
 @author: Kevin Hoopes
 @version: 6/28/2018"""
 

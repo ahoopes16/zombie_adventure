@@ -23,6 +23,10 @@ class RandomGenerator:
         self._member_file = filename
         self._members = []
 
+        self.rare = 0.1
+        self.uncommon = 0.2
+        self.common = 0.7
+
         if self._member_file != "":
             self._load_member_data()
 
@@ -44,11 +48,8 @@ class RandomGenerator:
         """Determine the rarity of the member to be
         returned.
         """
-        rare = 0.1
-        uncommon = 0.2
-        common = 0.7
         rarities = ["rare", "uncommon", "common"]
-        weights = [rare, uncommon, common]
+        weights = [self.rare, self.uncommon, self.common]
 
         return choice(rarities, p=weights)
 

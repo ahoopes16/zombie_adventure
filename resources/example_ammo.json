@@ -1,0 +1,21 @@
+{
+    "type" : "ammo",
+    "rare" : [
+        {
+            "name" : "grenades",
+            "range" : [0, 2]
+        }
+    ],
+    "uncommon": [
+        {
+            "name" : ".38 rounds",
+            "range" : [0, 2]
+        }
+    ],
+    "common": [
+        {
+            "name" : ".22 rounds",
+            "range" : [0, 2]
+        }
+    ]
+}

@@ -1,15 +1,6 @@
 {
     "type" : "materials",
-    "rare" : {
-        "upperBound" : 7,
-        "lowerBound" : 15
-    },
-    "uncommon": {
-        "upperBound" : 4,
-        "lowerBound" : 8
-    },
-    "common": {
-        "upperBound" : 0,
-        "lowerBound" : 5
-    }
+    "rare" : [5, 17],
+    "uncommon": [4, 8],
+    "common": [0, 5]
 }

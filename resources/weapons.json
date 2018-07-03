@@ -1,0 +1,153 @@
+{
+    "rare": [
+        {
+            "name": "Pistol (Common)",
+            "damage": "2d10",
+            "ammo": "none"
+        },
+        {
+            "name": "Hunting Rifle (Rare)",
+            "damage": "2d20",
+            "ammo": "none"
+        },
+        {
+            "name": "Shotgun (Uncommon)",
+            "damage": "1d20",
+            "ammo": "none"
+        },
+        {
+            "name": "Submachine Gun (Common)",
+            "damage": "5d8",
+            "ammo": "none"
+        },
+        {
+            "name": "AR15 (Uncommon)",
+            "damage": "3d10",
+            "ammo": "none"
+        },
+        {
+            "name": ".22 Rifle (Common)",
+            "damage": "1d10",
+            "ammo": "none"
+        },
+        {
+            "name": "Katana",
+            "damage": "3d8",
+            "ammo": "none"
+        },
+        {
+            "name": "Grenade",
+            "damage": "1d20 + 10",
+            "ammo": "none"
+        },
+        {
+            "name": "Grenade Launcher (Rare)",
+            "damage": "1d20 + 10",
+            "ammo": "none"
+        }
+    ],
+    "uncommon": [
+        {
+            "name": "Baseball Bat",
+            "damage": "1d8",
+            "ammo": "none"
+        },
+        {
+            "name": "Sledgehammer",
+            "damage": "1d10",
+            "ammo": "none"
+        },
+        {
+            "name": "Hunting Knife",
+            "damage": "2d6",
+            "ammo": "none"
+        },
+        {
+            "name": "Combat Knife",
+            "damage": "2d8",
+            "ammo": "none"
+        },
+        {
+            "name": "Claymore",
+            "damage": "2d6",
+            "ammo": "none"
+        },
+        {
+            "name": "Rapier",
+            "damage": "3d4",
+            "ammo": "none"
+        },
+        {
+            "name": "Hacksaw",
+            "damage": "1d6 + 2",
+            "ammo": "none"
+        },
+        {
+            "name": "Machete",
+            "damage": "2d8 + 2",
+            "ammo": "none"
+        },
+        {
+            "name": "Staple Gun (Common)",
+            "damage": "1d4",
+            "ammo": "none"
+        },
+        {
+            "name": "Nail Gun (Common)",
+            "damage": "1d6",
+            "ammo": "none"
+        },
+        {
+            "name": "Pitchfork",
+            "damage": "1d6 (can pin enemy for x rounds)",
+            "ammo": "none"
+        }
+    ],
+    "common": [
+        {
+            "name": "Hammer",
+            "damage": "1d6",
+            "ammo": "none"
+        },
+        {
+            "name": "Snow Shovel",
+            "damage": "1d6",
+            "ammo": "none"
+        },
+        {
+            "name": "Kitchen Knife",
+            "damage": "2d4",
+            "ammo": "none"
+        },
+        {
+            "name": "Tire Iron",
+            "damage": "1d8",
+            "ammo": "none"
+        },
+        {
+            "name": "Frying Pan",
+            "damage": "1d8",
+            "ammo": "none"
+        },
+        {
+            "name": "Crowbar",
+            "damage": "1d6 + 2",
+            "ammo": "none"
+        },
+        {
+            "name": "2x4",
+            "damage": "1d4 + 1",
+            "ammo": "none"
+        },
+        {
+            "name": "Brick",
+            "damage": "1d6 (2d6 when thrown)",
+            "ammo": "none"
+        },
+        {
+            "name": "Glass Bottle",
+            "damage": "1d4 (2d4 when thrown)",
+            "ammo": "none"
+        }
+    ]
+}

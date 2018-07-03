@@ -1,0 +1,24 @@
+{
+    "rare" : [
+        {
+            "title" : "Puppy",
+            "details" : "You happen upon a random puppy in the street. It seems interested in you guys, but looks frightened. If you're careful, you might be able to get it to follow you home!"
+        }
+    ],
+    "uncommon" : [
+        {
+            "title" : "Trip-N-Fall",
+            "details" : "One of your team members trips. Perform an Agility to check to see if you twist your ankle, reducing your movement speed by 5."
+        }
+    ],
+    "common" : [
+        {
+            "title" : "Zombies!",
+            "details" : "You run into between 2 and 5 zombies."
+        },
+        {
+            "title" : "Run Forest",
+            "details" : "You see another person running away from a group of zombies."
+        }
+    ]
+}

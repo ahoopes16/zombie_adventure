@@ -46,6 +46,45 @@ class ZombieApp():
         self.mater_gen = AmountGenerator(self.MATERIALS_PATH)
         self.ammo_gen = ItemAmountGenerator(self.AMMO_PATH)
 
+    def generate_weapon(self):
+        """Generate a random weapon."""
+        weapon = self.weapon_gen.generate()
+
+        if weapon['ammo'] == 'none':
+            print("You found a {}! It does {} damage!".format(weapon['name'],
+                                                              weapon['damage']))
+        else:
+            print("You found a {}! It does {} damage and uses {}!".format(weapon['name'],
+                                                                          weapon['damage'],
+                                                                          weapon['ammo']))
+
+    def generate_encounter(self, location):
+        """Generate an encounter for a specific location.
+
+        @param location: the location of the encounter
+        """
+        if location == "inside":
+            encounter = self.in_enc_gen.generate()
+        else:
+            encounter = self.out_enc_gen.generate()
+
+        print(encounter['title'])
+        print("===================")
+        print(encounter['details'])
+
+    def generate_food(self):
+        """Generate a random amount of food."""
+        print(self.food_gen.generate())
+
+    def generate_gas(self):
+        """Generate a random amount of gas."""
+        print(self.gas_gen.generate())
+
+    def generate_materials(self):
+        """Generate a random amount of materials."""
+        print(self.mater_gen.generate())
+
     def generate_ammo(self):
-        """Generate a random amount of ammo with a random type"""
+        """Generate a random amount of ammo
+        with a random type."""
         print(self.ammo_gen.generate())

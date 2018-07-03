@@ -10,14 +10,14 @@
 		{
 			"name" : "Baseball Bat",
 			"damage" : "1d8",
-			"ammo" : "None"
+			"ammo" : "none"
 		}
 	],
 	"common" : [
 		{
 			"name" : "Hammer",
 			"damage" : "1d6",
-			"ammo" : "None"
+			"ammo" : "none"
 		}
 	]
 }

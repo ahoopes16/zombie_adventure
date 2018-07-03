@@ -37,4 +37,15 @@ class ZombieApp():
     #############
 
     def __init__(self):
-        self.
+        """Construct an instance of Zombie App."""
+        self.weapon_gen = ItemGenerator(self.WEAPONS_PATH)
+        self.in_enc_gen = ItemGenerator(self.IN_ENCOUNTERS_PATH)
+        self.out_enc_gen = ItemGenerator(self.OUT_ENCOUNTERS_PATH)
+        self.food_gen = AmountGenerator(self.FOOD_PATH)
+        self.gas_gen = AmountGenerator(self.GAS_PATH)
+        self.mater_gen = AmountGenerator(self.MATERIALS_PATH)
+        self.ammo_gen = ItemAmountGenerator(self.AMMO_PATH)
+
+    def generate_ammo(self):
+        """Generate a random amount of ammo with a random type"""
+        print(self.ammo_gen.generate())

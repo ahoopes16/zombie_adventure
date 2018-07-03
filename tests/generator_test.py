@@ -21,12 +21,12 @@ class GeneratorTests(unittest.TestCase):
         self.item_gen = ItemGenerator()
         self.amount_gen = AmountGenerator()
         self.item_amount_gen = ItemAmountGenerator()
-        self.encounter_path = "../resources/example_encounters.json"
-        self.weapon_path = "../resources/example_weapons.json"
-        self.food_path = "../resources/example_food.json"
-        self.gas_path = "../resources/example_gas.json"
-        self.materials_path = "../resources/example_materials.json"
-        self.ammo_path = "../resources/example_ammo.json"
+        self.encounter_path = "../sample_resources/example_encounters.json"
+        self.weapon_path = "../sample_resources/example_weapons.json"
+        self.food_path = "../sample_resources/example_food.json"
+        self.gas_path = "../sample_resources/example_gas.json"
+        self.materials_path = "../sample_resources/example_materials.json"
+        self.ammo_path = "../sample_resources/example_ammo.json"
 
     def test_set_filename(self):
         """Test set filename method."""

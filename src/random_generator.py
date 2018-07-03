@@ -28,6 +28,18 @@ class GeneratorBase(ABC):
     randomly.
     """
 
+    #############
+    # CONSTANTS #
+    #############
+
+    RARE = 0.1
+    UNCOMMON = 0.2
+    COMMON = 0.7
+
+    #############
+    # FUNCTIONS #
+    #############
+
     def __init__(self, filename=""):
         """Construct a generator with a filename.
 
@@ -36,10 +48,6 @@ class GeneratorBase(ABC):
         self._curr_dir = os.path.dirname(__file__)
         self._member_file = filename
         self._members = []
-
-        self.rare = 0.1
-        self.uncommon = 0.2
-        self.common = 0.7
 
         if self._member_file != "":
             self._load_member_data()
@@ -63,7 +71,7 @@ class GeneratorBase(ABC):
         returned.
         """
         rarities = ["rare", "uncommon", "common"]
-        weights = [self.rare, self.uncommon, self.common]
+        weights = [self.RARE, self.UNCOMMON, self.COMMON]
 
         return choice(rarities, p=weights)
 

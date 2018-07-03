@@ -1,0 +1,6 @@
+{
+    "type" : "materials",
+    "rare" : [5, 17],
+    "uncommon": [4, 8],
+    "common": [0, 5]
+}

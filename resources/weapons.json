@@ -1,32 +1,32 @@
 {
     "rare": [
         {
-            "name": "Pistol (Common)",
+            "name": "Pistol",
             "damage": "2d10",
             "ammo": "none"
         },
         {
-            "name": "Hunting Rifle (Rare)",
+            "name": "Hunting Rifle",
             "damage": "2d20",
             "ammo": "none"
         },
         {
-            "name": "Shotgun (Uncommon)",
+            "name": "Shotgun",
             "damage": "1d20",
             "ammo": "none"
         },
         {
-            "name": "Submachine Gun (Common)",
+            "name": "Submachine Gun",
             "damage": "5d8",
             "ammo": "none"
         },
         {
-            "name": "AR15 (Uncommon)",
+            "name": "AR15",
             "damage": "3d10",
             "ammo": "none"
         },
         {
-            "name": ".22 Rifle (Common)",
+            "name": ".22 Rifle",
             "damage": "1d10",
             "ammo": "none"
         },
@@ -41,7 +41,7 @@
             "ammo": "none"
         },
         {
-            "name": "Grenade Launcher (Rare)",
+            "name": "Grenade Launcher",
             "damage": "1d20 + 10",
             "ammo": "none"
         }
@@ -88,18 +88,18 @@
             "ammo": "none"
         },
         {
-            "name": "Staple Gun (Common)",
+            "name": "Staple Gun",
             "damage": "1d4",
             "ammo": "none"
         },
         {
-            "name": "Nail Gun (Common)",
+            "name": "Nail Gun",
             "damage": "1d6",
             "ammo": "none"
         },
         {
             "name": "Pitchfork",
-            "damage": "1d6 (can pin enemy for x rounds)",
+            "damage": "1d6 (can pin enemy for X rounds)",
             "ammo": "none"
         }
     ],

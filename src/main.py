@@ -1,7 +1,12 @@
 """This is the main script which coordinates the zombie adventure
 application.
 @author: Kevin Hoopes
-@version: 7/2/2018"""
+@version: 7/2/2018
+"""
+
+###########
+# IMPORTS #
+###########
 
 from pprint import pprint
 from random_generator import ItemGenerator, AmountGenerator, ItemAmountGenerator

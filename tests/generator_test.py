@@ -4,12 +4,20 @@ Generator class.
 @version: 7/2/2018
 """
 
+###########
+# IMPORTS #
+###########
+
 import sys
 import os
 import unittest
 
 sys.path.insert(0, os.path.abspath('..'))
 from src.random_generator import ItemGenerator, AmountGenerator, ItemAmountGenerator
+
+##############
+# TEST SUITE #
+##############
 
 class GeneratorTests(unittest.TestCase):
 

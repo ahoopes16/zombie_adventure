@@ -4,13 +4,22 @@ field inside the members of the JSON file. This module
 assumes the JSON is split into arrays of objects. The arrays
 should be split by rarity level.
 @author: Kevin Hoopes
-@version: 7/2/2018"""
+@version: 7/2/2018
+"""
+
+###########
+# IMPORTS #
+###########
 
 import json
 import os
 from abc import ABC, abstractmethod
 from random import randrange
 from numpy.random import choice
+
+####################
+# CLASS DEFINITION #
+####################
 
 class GeneratorBase(ABC):
 

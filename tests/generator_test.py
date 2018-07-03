@@ -1,7 +1,7 @@
 """This module contains a testing suite for the Random
 Generator class.
 @author: Kevin Hoopes
-@version: 7/1/2018
+@version: 7/2/2018
 """
 
 import sys

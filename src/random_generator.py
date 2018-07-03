@@ -4,7 +4,7 @@ field inside the members of the JSON file. This module
 assumes the JSON is split into arrays of objects. The arrays
 should be split by rarity level.
 @author: Kevin Hoopes
-@version: 6/28/2018"""
+@version: 7/2/2018"""
 
 import json
 import os

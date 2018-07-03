@@ -3,7 +3,7 @@
     "rare" : [
         {
             "name" : "grenades",
-            "range" : [0, 2]
+            "range" : [0, 7]
         }
     ],
     "uncommon": [
@@ -15,7 +15,7 @@
     "common": [
         {
             "name" : ".22 rounds",
-            "range" : [0, 20]
+            "range" : [0, 7]
         }
     ]
 }

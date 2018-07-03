@@ -26,7 +26,6 @@ def main():
     Host the game.
     """
     weapon_gen = ItemGenerator(WEAPONS_PATH)
-    encounter_gen = ItemGenerator(ENCOUNTERS_PATH)
     food_gen = AmountGenerator(FOOD_PATH)
     gas_gen = AmountGenerator(GAS_PATH)
     materials_gen = AmountGenerator(MATERIALS_PATH)

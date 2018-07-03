@@ -109,3 +109,19 @@ class AmountGenerator(GeneratorBase):
         chosen_range = self._members[chosen_rarity]
         amount = randrange(chosen_range[0], chosen_range[1])
         return "{} {}".format(amount, self._members['type'])
+
+
+class ItemAmountGenerator(GeneratorBase):
+
+    """A generator that randomly chooses an item
+    from the members given in the file, then randomly
+    generates an amount of that item.
+    """
+
+    def generate(self):
+        """Return a random amount member type"""
+        chosen_rarity = self._determine_rarity()
+        chosen_item = choice(self._members[chosen_rarity])
+        chosen_range = chosen_item['range']
+        amount = randrange(chosen_range[0], chosen_range[1])
+        return "{} {}".format(amount, chosen_item['name'])

@@ -4,7 +4,7 @@ application.
 @version: 6/27/2018"""
 
 from pprint import pprint
-from random_generator import ItemGenerator, AmountGenerator
+from random_generator import ItemGenerator, AmountGenerator, ItemAmountGenerator
 
 #############
 # CONSTANTS #
@@ -30,11 +30,13 @@ def main():
     food_gen = AmountGenerator(FOOD_PATH)
     gas_gen = AmountGenerator(GAS_PATH)
     materials_gen = AmountGenerator(MATERIALS_PATH)
+    ammo_gen = ItemAmountGenerator(AMMO_PATH)
 
 
     pprint(weapon_gen.generate())
     pprint(food_gen.generate())
     pprint(gas_gen.generate())
     pprint(materials_gen.generate())
+    pprint(ammo_gen.generate())
 
 main()

@@ -4,7 +4,7 @@ application.
 @version: 6/27/2018"""
 
 from pprint import pprint
-from random_generator import ItemGenerator
+from random_generator import ItemGenerator, AmountGenerator
 
 #############
 # CONSTANTS #
@@ -12,6 +12,10 @@ from random_generator import ItemGenerator
 
 WEAPONS_PATH = "../resources/example_weapons.json"
 ENCOUNTERS_PATH = "../resources/example_encounters.json"
+FOOD_PATH = "../resources/example_food.json"
+GAS_PATH = "../resources/example_gas.json"
+MATERIALS_PATH = "../resources/example_materials.json"
+AMMO_PATH = "../resources/example_ammo.json"
 
 #############
 # FUNCTIONS #
@@ -23,9 +27,14 @@ def main():
     """
     weapon_gen = ItemGenerator(WEAPONS_PATH)
     encounter_gen = ItemGenerator(ENCOUNTERS_PATH)
+    food_gen = AmountGenerator(FOOD_PATH)
+    gas_gen = AmountGenerator(GAS_PATH)
+    materials_gen = AmountGenerator(MATERIALS_PATH)
 
-    pprint(weapon_gen.get_members())
-    pprint(encounter_gen.get_members())
+
     pprint(weapon_gen.generate())
+    pprint(food_gen.generate())
+    pprint(gas_gen.generate())
+    pprint(materials_gen.generate())
 
 main()

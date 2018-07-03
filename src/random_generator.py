@@ -9,6 +9,7 @@ should be split by rarity level.
 import json
 import os
 from abc import ABC, abstractmethod
+from random import randrange
 from numpy.random import choice
 
 class GeneratorBase(ABC):
@@ -93,3 +94,18 @@ class ItemGenerator(GeneratorBase):
         """Return a random member for use."""
         chosen_rarity = self._determine_rarity()
         return choice(self._members[chosen_rarity])
+
+
+class AmountGenerator(GeneratorBase):
+
+    """A generator that randomly returns an amount
+    of a specific type of item based on ranges given
+    inside the members of the file given.
+    """
+
+    def generate(self):
+        """Return a random amount member type"""
+        chosen_rarity = self._determine_rarity()
+        chosen_range = self._members[chosen_rarity]
+        amount = randrange(chosen_range[0], chosen_range[1])
+        return "{} {}".format(amount, self._members['type'])

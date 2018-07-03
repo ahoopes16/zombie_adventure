@@ -8,12 +8,14 @@ should be split by rarity level.
 
 import json
 import os
+from abc import ABC, abstractmethod
 from numpy.random import choice
 
-class RandomGenerator:
+class GeneratorBase(ABC):
 
-    """Randomly generate members from a given file
-    when prompted.
+    """Base class for an object that reads in members
+    from a file so that it may randomly produce a member
+    randomly.
     """
 
     def __init__(self, filename=""):
@@ -72,6 +74,20 @@ class RandomGenerator:
     def get_members(self):
         """Return the generator's member data."""
         return self._members
+
+    @abstractmethod
+    def generate(self):
+        """Return a random member for use."""
+        return
+
+
+class ItemGenerator(GeneratorBase):
+
+    """A generator that randomly returns an item
+    from within the members of a certain rarity.
+    Rarity is randomly decided with a given
+    distribution.
+    """
 
     def generate(self):
         """Return a random member for use."""

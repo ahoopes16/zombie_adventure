@@ -4,7 +4,7 @@ application.
 @version: 6/27/2018"""
 
 from pprint import pprint
-from random_generator import RandomGenerator
+from random_generator import ItemGenerator
 
 #############
 # CONSTANTS #
@@ -21,8 +21,8 @@ def main():
     """
     Host the game.
     """
-    weapon_gen = RandomGenerator(WEAPONS_PATH)
-    encounter_gen = RandomGenerator(ENCOUNTERS_PATH)
+    weapon_gen = ItemGenerator(WEAPONS_PATH)
+    encounter_gen = ItemGenerator(ENCOUNTERS_PATH)
 
     pprint(weapon_gen.get_members())
     pprint(encounter_gen.get_members())

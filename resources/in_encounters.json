@@ -1,0 +1,20 @@
+{
+    "rare" : [
+        {
+            "title" : "Creamy Yellow Log",
+            "details" : "One of the members of your party finds a rare box of twinkies. Roll to decide who found it!"
+        }
+    ],
+    "uncommon" : [
+        {
+            "title" : "Zombie Shelf",
+            "details" : "A zombie knocks over a shelf and chases after the party. Prepare for combat!"
+        },
+    ],
+    "common" : [
+        {
+            "title" : "Zombebe",
+            "details" : "You find a singular zombie, no more, no less."
+        }
+    ]
+}

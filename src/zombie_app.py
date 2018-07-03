@@ -24,13 +24,13 @@ class ZombieApp():
     # CONSTANTS #
     #############
 
-    WEAPONS_PATH = "../sample_resources/example_weapons.json"
-    IN_ENCOUNTERS_PATH = "../sample_resources/example_in_encounters.json"
-    OUT_ENCOUNTERS_PATH = "../sample_resources/example_out_encounters.json"
-    FOOD_PATH = "../sample_resources/example_food.json"
-    GAS_PATH = "../sample_resources/example_gas.json"
-    MATERIALS_PATH = "../sample_resources/example_materials.json"
-    AMMO_PATH = "../sample_resources/example_ammo.json"
+    WEAPONS_PATH = "../resources/weapons.json"
+    IN_ENCOUNTERS_PATH = "../resources/in_encounters.json"
+    OUT_ENCOUNTERS_PATH = "../resources/out_encounters.json"
+    FOOD_PATH = "../resources/food.json"
+    GAS_PATH = "../resources/gas.json"
+    MATERIALS_PATH = "../resources/materials.json"
+    AMMO_PATH = "../resources/ammo.json"
 
     #############
     # FUNCTIONS #
